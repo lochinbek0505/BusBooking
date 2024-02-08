@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash6"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:text="Har kuni O'zbekiston bo'ylab \navtobus qatonovi"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_header2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Biz viloyatlar bo'ylab ommabop qatnovlarni taklif etamiz."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tv_header"
+        android:textStyle="bold" />
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="350dp"-->
+<!--        app:cardElevation="4dp"-->
+<!--        android:layout_margin="25dp"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        android:layout_centerInParent="true" >-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            >-->
+
+
+   <androidx.cardview.widget.CardView
+       android:id="@+id/cv_from"
+       android:layout_width="match_parent"
+       android:layout_height="65dp"
+       android:layout_marginStart="30dp"
+       android:layout_marginEnd="30dp"
+       app:cardElevation="4dp"
+       android:layout_marginTop="40dp"
+       app:cardCornerRadius="15dp"
+       android:backgroundTint="#FFA000"
+       android:layout_below="@id/tv_header2"
+       >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qayerdan"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/baseline_keyboard_arrow_right_24"
+            />
+
+    </RelativeLayout>
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_to"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#FFA000"
+        android:layout_below="@id/cv_from"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qayerga"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="35dp"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/baseline_keyboard_arrow_right_24"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_date"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#FFA000"
+        android:layout_below="@id/cv_to"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qachon"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="35dp"
+                />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="40dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/baseline_date_range_24"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_search"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="40dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#FFA000"
+        android:layout_below="@id/cv_date"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="35dp"
+                android:text="Qidirishni boshlash"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!--        </RelativeLayout>-->
+
+
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+
+</RelativeLayout>

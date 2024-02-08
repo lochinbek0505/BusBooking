@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Bus Icon -->
+    <path
+        android:fillColor="@android:color/white"
+        android:pathData="M6 1c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V3c0-1.1-.9-2-2-2H6zm1 2h10c.55 0 1 .45 1 1v10H6V4c0-.55.45-1 1-1zm6 6h2v3h-2zm-5.44 6l.72 1.45 1.62.18L12 15.1l2.09 1.55 1.62-.18.72-1.45L12 13.9l-3.44 2.56zm-.56-.33l-2.89-2.16-2.89 2.16L4 16.01 4 20h16v-3.99l-1.11-.83-2.89-2.16-2.89 2.16L8 16.01 7 17.68zM16 20h1v-2h-1v2z"/>
+</vector>
